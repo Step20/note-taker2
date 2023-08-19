@@ -1,0 +1,131 @@
+.login-out {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  .content {
+    .left {
+      height: 100vh;
+      display: table;
+      padding: 2vw;
+      .left-up {
+        img {
+          width: calc(10rem + 5vw);
+          padding: 2vw;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all 0.3s ease;
+          &:hover {
+            transition: all 0.3s ease;
+            transform: translate(0px, -2px);
+            cursor: pointer;
+            opacity: 0.7;
+          }
+        }
+      }
+      .left-down {
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        .login,
+        .register {
+          position: absolute;
+          top: 55%;
+          left: 55%;
+          width: 60%;
+          transform: translate(-50%, -50%);
+          background: rgb(255, 255, 255);
+          h2 {
+            color: #000;
+            font-size: calc(1.2rem + 1.4vw);
+            font-weight: 600;
+          }
+          p {
+            font-size: calc(1.1rem + 0.3vw);
+          }
+          .p-or {
+            font-weight: 700;
+            margin-left: -15%;
+          }
+          .input {
+            display: block;
+            outline: 0;
+            border-width: 0 0 1px;
+            border-color: rgba(0, 0, 0, 0.67);
+            font-size: calc(1.1rem + 0.5vw);
+            font-weight: 600;
+            width: 90%;
+          }
+          ::placeholder {
+            color: rgba(0, 0, 0, 0.532);
+          }
+          .btn {
+            margin-top: 2vw;
+            background-color: #000;
+            padding: calc(0.6rem + 0.3vw);
+            color: white;
+            font-weight: 400;
+            font-size: calc(1.1rem + 0.3vw);
+            width: 90%;
+            border-radius: 0.9vw;
+            transition: all 0.3s ease;
+            &:hover {
+              transition: all 0.3s ease;
+              transform: translate(0px, -5px);
+              background-color: #1d1d1d;
+              border: #000 1px solid;
+              color: white;
+              font-weight: 400;
+            }
+          }
+          .err {
+            font-size: calc(0.7rem + 0.3vw);
+            color: red;
+            font-weight: 400;
+            opacity: 0.5;
+          }
+          .log-p {
+            margin-left: 20%;
+            margin-top: 0.85vw;
+            color: #00000073;
+            font-size: calc(0.75rem + 0.3vw);
+            .bold {
+              margin-left: 0.4vw;
+              font-weight: bold;
+              text-decoration: underline;
+              transition: all 0.3s ease;
+              &:hover {
+                transition: all 0.3s ease;
+                color: #000000;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right {
+      padding: 0;
+      .parallax {
+        padding: 0;
+        background-image: url("../assets/bg.png");
+        width: 100%;
+        height: 100vh;
+        display: table;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .img {
+          display: table-cell;
+          vertical-align: middle;
+          img {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
