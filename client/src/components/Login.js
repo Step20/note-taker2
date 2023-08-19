@@ -68,7 +68,7 @@ export default function Login({ setIsLogin }) {
     <div>
       <Container fluid className="login-out">
         <Row className="content">
-          <Col xs="8" sm="6" className="left">
+          <Col xs="12" sm="6" className="left">
             <div className="left-up ">
               <img href="#" src={logo} />
             </div>
@@ -168,7 +168,7 @@ export default function Login({ setIsLogin }) {
             </Fade>
           </Col>
 
-          <Col xs="4" sm="6" className="right mx-auto">
+          <Col xs="0" sm="6" className="right mx-auto">
             <div class="parallax">
               <div class="img text-center">
                 <img src={logow} />
